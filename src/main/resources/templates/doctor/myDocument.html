@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>doctor_document</title>
+</head>
+<body>
+    <h1>我的档案</h1>
+    <form th:action="@{/doctor/myDocument}" method="post">
+        <div>
+            姓名<input type="text" name="name">
+        </div>
+        <div>
+            定位<input type="text" name="location">
+        </div>
+        <div>
+            所在医院<input type="text" name="hospital">
+        </div>
+        <div>
+            所属科室<input type="text" name="department">
+        </div>
+        <div>
+            个人简介<input type="text" name="description" style="height: 200px; width: 300px">
+        </div>
+        <div>
+            教育背景<input type="text" name="edu_background" style="height: 200px; width: 300px">
+        </div>
+        <div>
+            获奖经历<input type="text" name="award" style="height: 200px; width: 300px">
+        </div>
+        <div>
+            <input type="submit" value="保存">
+        </div>
+    </form>
+</body>
+</html>

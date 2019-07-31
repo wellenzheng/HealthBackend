@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>myCenter</title>
+</head>
+<body>
+    <h1>个人中心</h1>
+    用户名: <h2 th:text="${username}"></h2>
+    身份: <h2 th:text="${role}"></h2>
+    昵称: <h2 th:text="${name}"></h2>
+    电话号码: <h2 th:text="${phone}"></h2>
+
+    <a href="/user/home">主页</a>
+    <a href="/user/myDocument">我的档案</a>
+    <a href="/user/changePassword">修改密码</a>
+    <a href="/changePhone">修改手机号</a>
+    <a href="/user/setting">设置</a>
+
+
+    <form th:action="@{/logout}" method="post">
+        <button>退出登录</button>
+    </form>
+</body>
+</html>
