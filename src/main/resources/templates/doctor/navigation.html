@@ -1,0 +1,43 @@
+
+    <nav class="navbar navbar-expand-md navbar-dark bg-dark fixed-top" id="navigation">
+        <a class="navbar-brand" href="#">康宁医疗</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarsExampleDefault">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="/user/home"> 首页 <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/user/searchByDept"> 找医生 </a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="/user/myCenter" id="myCenter" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> 个人中心 </a>
+                    <div class="dropdown-menu" aria-labelledby="myCenter">
+                        <a class="dropdown-item" href="/user/myDocument">我的档案</a>
+                        <a class="dropdown-item" href="/changePassword">修改密码</a>
+                        <a class="dropdown-item" href="/changePhone">修改手机号码</a>
+<!--                        <form th:action="@{/logout}" method="post">-->
+<!--                            <a class="dropdown-item">-->
+<!--                                退出登录-->
+<!--                            </a>-->
+<!--                        </form>-->
+                    </div>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="dropdown01" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">关于我们</a>
+                    <div class="dropdown-menu" aria-labelledby="dropdown01">
+                        <a class="dropdown-item" href="#">Action</a>
+                        <a class="dropdown-item" href="#">Another action</a>
+                        <a class="dropdown-item" href="#">Something else here</a>
+                    </div>
+                </li>
+            </ul>
+            <form class="form-inline my-2 my-lg-0">
+                <input class="form-control mr-sm-2" type="text" placeholder="请输入关键字" aria-label="Search">
+                <button class="btn btn-secondary my-2 my-sm-0" type="submit">搜索</button>
+            </form>
+        </div>
+    </nav>
